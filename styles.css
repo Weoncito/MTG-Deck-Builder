@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+}
+
+.deck-builder {
+  display: flex;
+  justify-content: space-between;
+}
+
+.decklist {
+  width: 45%;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  min-height: 300px;
+  list-style-type: none;
+}
+
+.decklist li {
+  padding: 8px;
+  background-color: #f4f4f4;
+  margin: 5px 0;
+  cursor: move;
+  border: 1px solid #ccc;
+}
+
+h2 {
+  text-align: center;
+}
+
+.save-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

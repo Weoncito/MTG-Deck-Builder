@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MTG Deck Builder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="deck-builder">
+    <div class="considering-section">
+      <h2>Considering</h2>
+      <ul id="considering-list" class="decklist" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <!-- Cards to be dragged from here -->
+      </ul>
+    </div>
+
+    <div class="final-deck-section">
+      <h2>Final Deck</h2>
+      <ul id="final-deck-list" class="decklist" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <!-- Cards to be dropped here -->
+      </ul>
+    </div>
+  </div>
+
+  <div class="save-section">
+    <button onclick="saveDeck()">Save Deck</button>
+    <button onclick="loadDeck()">Load Deck</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
